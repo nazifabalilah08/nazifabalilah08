@@ -1,0 +1,82 @@
+h1{
+    color: darkblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-variant: small-caps;
+    text-align: center;
+} 
+body {
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: justify; 
+   background-color: rgb(55, 226, 226);
+}
+
+table {
+    background-color: palevioletred;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    background-color: tomato;
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    color: black;
+    height: 50px;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: 'Hina Mincho', serif;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+    font-family: 'Pacifico'
+}
+
+nav ul li a {
+    color: rgb(234, 192, 255);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+nav ul li a:hover{
+    color: rgb(250, 240, 255);
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+}
+
+/* Responsive Breakpoint */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+  
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+    nav ul {
+        display: none;
+    }
+}
+
